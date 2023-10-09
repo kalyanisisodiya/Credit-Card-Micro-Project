@@ -1,0 +1,482 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 0rem;
+  margin-top: 0rem;
+  display: flex;
+}
+
+.left {
+  width: 25rem;
+  height: 100vh;
+  background: linear-gradient(
+    169deg,
+    rgba(4, 31, 27, 0.98) 14.76%,
+    #380c4a 25.62%,
+    #3b0e46 29.25%,
+    #3d0f42 33.37%,
+    #441436 40.15%,
+    #33254e 46.18%,
+    #2b2d59 52.47%,
+    #292654 57.59%,
+    #271f4f 62.33%,
+    #240d37 74.06%,
+    #22052d 88.22%,
+    #22052d 125.39%,
+    #22052d 154.65%,
+    #22052d 154.67%
+  );
+  background: radial-gradient(
+    12.04% 28.41% at 52.64% 24.47%,
+    rgba(78, 26, 69, 0.2) 0%,
+    rgba(69, 20, 43, 0.2) 14.29%,
+    rgba(69, 20, 43, 0.2) 28.57%,
+    rgba(61, 14, 18, 0.2) 42.86%,
+    rgba(61, 13, 15, 0.2) 57.14%,
+    rgba(61, 13, 15, 0.2) 71.43%,
+    rgba(60, 13, 13, 0.2) 100% rgba(61, 13, 15, 0.2) 85.71%
+      /* rgba(60, 13, 13, 0.2) 100% */
+  );
+}
+
+.front {
+  width: 25.97381rem;
+  height: 15.42606rem;
+  background-color: rgba(98, 68, 250, 1);
+  margin: 4.77rem 0rem 0rem 4.7rem;
+  border-radius: 0.625rem;
+  border: 1px solid #000;
+}
+
+.ellipse {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+.ellipse1 {
+  width: 2.9375rem;
+  height: 2.9375rem;
+  background: #feffff;
+  border-radius: 50%;
+  margin: 1.5rem 0rem 0rem 1.5rem;
+  position: relative;
+}
+
+.ellipse2 {
+  width: 1.1875rem;
+  height: 1.1875rem;
+  background: linear-gradient(128deg, #623ff2 19.57%, #5e37ec 93.11%);
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin: -2rem 0rem 0rem 5.5rem;
+  position: relative;
+}
+
+.ellipse3 {
+  width: 18.77269rem;
+  height: 11.55013rem;
+  transform: rotate(-34.616deg);
+  flex-shrink: 1;
+  border-radius: 18.77269rem;
+  background: #ea7167;
+  filter: blur(47.5px);
+  margin: -6rem 0rem 0rem 8rem;
+}
+
+.ellipse4 {
+  filter: blur(47.5px);
+  width: 23.80756rem;
+  height: 8.92069rem;
+  transform: rotate(-41.78deg);
+  flex-shrink: 1;
+  border-radius: 23.80756rem;
+  background: #5e90e6;
+  margin: 1rem 0rem 0rem 2rem;
+}
+
+.ellipse5 {
+  filter: blur(47.5px);
+  width: 14.37775rem;
+  height: 5.37056rem;
+  transform: rotate(-38.588deg);
+  flex-shrink: 1;
+  background: #cf56bd;
+  border-radius: 23.80756rem;
+  margin: -20rem 0rem 0rem 4rem;
+}
+
+.ellipse6 {
+  filter: blur(47.5px);
+  width: 15.625rem;
+  height: 7.375rem;
+  transform: rotate(-34.616deg);
+  flex-shrink: 1;
+  background: #6328c0;
+  border-radius: 23.80756rem;
+  margin: 5rem 0rem 0rem -2rem;
+}
+
+.ellipse7 {
+  filter: blur(47.5px);
+  width: 20.82388rem;
+  height: 7.97888rem;
+  transform: rotate(-45.651deg);
+  flex-shrink: 1;
+  border-radius: 20.82388rem;
+  background: #620594;
+  margin: -7rem 0rem 0rem 12rem;
+  object-fit: contain;
+}
+
+.back {
+  width: 28.1875rem;
+  height: 16.72406rem;
+  background: linear-gradient(107deg, #fff 0%, #d9d9d9 103.94%);
+  filter: drop-shadow(10px 11px 62px rgba(0, 0, 0, 0.19));
+  position: relative;
+  border-radius: 0.625rem;
+  margin: 3.43rem 0rem 0rem 12.25rem;
+}
+
+.rectangle5 {
+  width: 28rem;
+  height: 2.94613rem;
+  background: #000;
+  margin: 1.3rem 0rem 1.3rem 0rem;
+  position: fixed;
+}
+
+.rectangle6 {
+  width: 22.5625rem;
+  height: 2.15294rem;
+  flex-shrink: 0;
+  border-radius: 0.25rem;
+  background: #adb6bf;
+  margin: 7.16rem 2.75rem 6.23rem 2.69rem;
+  position: fixed;
+}
+
+.cardname {
+  margin: 15.53rem 0rem 0rem 31.61rem;
+}
+
+.name {
+  width: 23.875rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background: #fff;
+  margin-top: -0.2rem;
+  /* margin: 17.53rem 0rem 0rem 31.61rem; */
+  position: fixed;
+  padding-left: 10px;
+}
+
+.cardnumber {
+  margin: 5.35rem 0rem 0rem 31.61rem;
+}
+
+.number {
+  width: 23.875rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background: #fff;
+  margin-top: -0.2rem;
+  /* margin: 3.35rem 0rem 0rem 31.61rem; */
+  position: fixed;
+  padding-left: 10px;
+}
+
+.cardholder {
+  width: 10rem;
+  height: 0.5625rem;
+  flex-shrink: 0;
+  color: #404040;
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11625rem;
+  /* padding-bottom: 30px; */
+  /* margin: 17.53rem 0rem 0rem 31.61rem; */
+  position: fixed;
+}
+
+.error-name {
+  color: #f81212;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2.8rem 0rem 0rem 32rem;
+  position: fixed;
+}
+
+.error-number {
+  color: #f81212;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2.8rem 0rem 0rem 32rem;
+  position: fixed;
+}
+
+.expirydate {
+  display: flex;
+}
+
+.expiry-label {
+  width: 9rem;
+  height: 0.5625rem;
+  flex-shrink: 0;
+  color: #404040;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11625rem;
+  margin: 5rem 0rem 0rem 32rem;
+  position: fixed;
+}
+
+.expirydate-input {
+  width: 4.875rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background: #fff;
+  margin: 6.44rem 0rem 0rem 32rem;
+  position: fixed;
+  padding-left: 10px;
+}
+
+.expiryyear-input {
+  width: 4.875rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background: #fff;
+  margin: 6.4rem 0rem 0rem 37.61rem;
+  position: fixed;
+  padding-left: 10px;
+}
+
+.error-Expiry-Date {
+  color: #f81212;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 8rem 0rem 0rem 32.61rem;
+  position: fixed;
+}
+
+.cvc-label {
+  width: 1.875rem;
+  height: 0.5625rem;
+  flex-shrink: 0;
+  color: #404040;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11625rem;
+  margin: 5rem 0rem 0rem 44.61rem;
+  position: fixed;
+}
+
+.cvc-input {
+  width: 11.8125rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background: #fff;
+  margin: 6.4rem 0rem 0rem 44rem;
+  position: fixed;
+  padding-left: 10px;
+}
+
+.error-cvc {
+  color: #f81212;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 8rem 0rem 0rem 45.37rem;
+  position: fixed;
+}
+
+.confirm {
+  width: 24.5rem;
+  height: 3.3125rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid #000;
+  background: #220930;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 10.44rem 0rem 0rem 31.61rem;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  padding-top: 0.8rem;
+  position: fixed;
+}
+
+.confirm:hover{
+  color: black;
+  background: lightgray;
+  border: 1px solid #fff;
+}
+
+.display-number {
+  width: 22.9375rem;
+  height: 1.6875rem;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2925rem;
+}
+
+
+
+.displayNumber {
+  margin: -12rem 0rem 0rem -18rem;
+  width: 22.9375rem;
+  height: 1.6875rem;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2925rem;
+  position: absolute;
+}
+
+.displayName {
+  margin: -8rem 0rem 0rem -18rem;
+  width: 9.6875rem;
+  height: 0.6875rem;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.15438rem;
+  position: absolute;
+}
+
+.displayDate {
+  margin: -8rem 0rem 0rem -0.4rem;
+  width: 3.1875rem;
+  height: 0.8125rem;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.20563rem;
+  position: absolute;
+}
+
+.displayCvc {
+  margin: 6.4rem 0rem 0rem 9.5rem;
+  width: 2.0625rem;
+  height: 0.79319rem;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.20563rem;
+  position: absolute;
+}
+
+
